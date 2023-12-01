@@ -1,0 +1,383 @@
+@import url("https://fonts.googleapis.com/css2?family=Montserrat:wght@400;700&family=Roboto+Slab:wght@300;400;500;700&display=swap");
+
+* {
+  text-decoration: none;
+  font-family: "Montserrat", sans-serif;
+  font-family: "Roboto Slab", serif;
+  color: #276c6a;
+  font-size: 16px;
+}
+
+body {
+  padding: 80px 150px 0px 150px;
+  background-color: #fff;
+}
+
+/* #av-menu  */
+.nav-menu {
+  position: fixed;
+  top: 0px;
+  left: 250px;
+  height: 100px;
+  width: 1000px;
+  display: flex;
+  align-items: center;
+  justify-content: space-around;
+  background-color: #f6c7cc;
+  z-index: 99;
+}
+
+.nav-menu > div > a:hover {
+  text-decoration: underline #1e1e1e !important;
+}
+
+.menu-left {
+  margin-left: 30px;
+  font-weight: bolder;
+  font-size: 25px;
+  margin-top: -5px;
+}
+
+.menu-right {
+  margin-right: 30px;
+}
+
+.menu-right > a {
+  padding-left: 20px;
+}
+
+.home {
+  margin-left: 200px;
+}
+
+/* landing-section */
+
+.landing-page {
+  padding: 80px 20px 0px;
+  height: 960px;
+  display: flex;
+  justify-content: space-around;
+  position: relative;
+}
+
+.title {
+  position: absolute;
+  z-index: 1;
+  /* bottom: 700px; */
+  top: 240px;
+  left: 150px;
+  font-weight: bold;
+  font-size: 60px;
+}
+
+.img01 {
+  position: relative;
+  top: 40px;
+  background-color: beige;
+  width: 150px;
+  height: 150px;
+  border-radius: 50%;
+  right: -600px;
+  background-image: url(/images/pexels-cong-h-1404825.jpg);
+  background-repeat: no-repeat;
+  background-size: cover;
+  background-position: center;
+}
+
+.img02 {
+  position: relative;
+  top: 40px;
+  background-color: beige;
+  width: 170px;
+  height: 350px;
+  border-radius: 200px;
+  right: -550px;
+  margin-left: 40px;
+  background-image: url(/images/pexels-anna-shvets-4587992.jpg);
+  background-repeat: no-repeat;
+  background-size: cover;
+  background-position: center;
+}
+
+.img05 {
+  z-index: -2;
+  position: relative;
+  top: 350px;
+  right: 230px;
+  background-color: beige;
+  height: 150px;
+  width: 250px;
+  border-radius: 170px;
+  background-image: url(/images/pexels-anna-shvets-4588018.jpg);
+  background-repeat: no-repeat;
+  background-size: cover;
+  background-position: center;
+}
+
+.button {
+  width: 250px;
+  height: 70px;
+  position: relative;
+  top: 380px;
+  right: 380px;
+  background-color: #256c6a;
+  color: #f0a0a8;
+  font-weight: bold;
+  text-transform: uppercase;
+  font-size: 30px;
+  border: none;
+  /* border: 5px solid #256c6a; */
+}
+
+.button:hover {
+  box-shadow: 5px 10px #f0a0a8;
+  border: 5px solid #f0a0a8;
+}
+
+.arrow {
+  z-index: 5;
+  position: relative;
+  top: 350px;
+  right: -20px;
+  background-image: url(/arrow.png);
+}
+
+/* section 1 */
+
+.one {
+  padding-left: 75px;
+  padding-right: 150px;
+  height: 700px;
+}
+
+.one > div {
+  padding-left: 75px;
+  margin-bottom: 50px;
+  font-size: 50px;
+  font-family: system-ui, -apple-system, BlinkMacSystemFont, "Segoe UI", Roboto,
+    Oxygen, Ubuntu, Cantarell, "Open Sans", "Helvetica Neue", sans-serif;
+  font-weight: bold;
+}
+
+.two {
+  padding-left: 150px;
+  padding-right: 150px;
+  height: 700px;
+}
+
+h1 {
+  font-size: 50px;
+  padding-left: 75px;
+}
+
+.container {
+  display: grid;
+  grid-template-columns: auto auto;
+  gap: 40px;
+  justify-content: center;
+  align-items: center;
+  height: 400px;
+  padding-left: 80px;
+}
+
+.srv01 {
+  background-color: rgb(96, 182, 182);
+  height: 175px;
+  width: 380px;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
+.srv01:hover {
+  box-shadow: 10px 10px #256c6a;
+}
+
+.srv01 > div,
+.srv02 > div,
+.srv03 > div,
+.srv04 > div {
+  color: #1e1e1e;
+}
+
+.s01 {
+  font-size: 70px;
+  padding-right: 20px;
+  font-weight: bold;
+  font-family: system-ui, -apple-system, BlinkMacSystemFont, "Segoe UI", Roboto,
+    Oxygen, Ubuntu, Cantarell, "Open Sans", "Helvetica Neue", sans-serif;
+}
+
+.s1,
+.s2,
+.s3,
+.s4 {
+  padding-top: 35px;
+}
+
+.s1:hover {
+  text-decoration: underline;
+  cursor: pointer;
+}
+.s2:hover {
+  text-decoration: underline;
+  cursor: pointer;
+}
+.s3:hover {
+  text-decoration: underline;
+  cursor: pointer;
+}
+.s4:hover {
+  text-decoration: underline;
+  cursor: pointer;
+}
+
+.srv02 {
+  background-color: rgb(96, 182, 182);
+  height: 175px;
+  width: 380px;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
+.srv02:hover {
+  box-shadow: 10px 10px #256c6a;
+}
+
+.s02 {
+  font-size: 70px;
+  padding-right: 20px;
+  font-weight: bold;
+  font-family: system-ui, -apple-system, BlinkMacSystemFont, "Segoe UI", Roboto,
+    Oxygen, Ubuntu, Cantarell, "Open Sans", "Helvetica Neue", sans-serif;
+}
+
+.srv03 {
+  background-color: rgb(96, 182, 182);
+  height: 175px;
+  width: 380px;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
+.srv03:hover {
+  box-shadow: 10px 10px #256c6a;
+}
+
+.s03 {
+  font-size: 70px;
+  padding-right: 20px;
+  font-weight: bold;
+  font-family: system-ui, -apple-system, BlinkMacSystemFont, "Segoe UI", Roboto,
+    Oxygen, Ubuntu, Cantarell, "Open Sans", "Helvetica Neue", sans-serif;
+}
+
+.srv04 {
+  background-color: rgb(96, 182, 182);
+  height: 175px;
+  width: 380px;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
+.srv04:hover {
+  box-shadow: 10px 10px #256c6a;
+}
+
+.s04 {
+  font-size: 70px;
+  padding-right: 20px;
+  font-weight: bold;
+  font-family: system-ui, -apple-system, BlinkMacSystemFont, "Segoe UI", Roboto,
+    Oxygen, Ubuntu, Cantarell, "Open Sans", "Helvetica Neue", sans-serif;
+}
+
+.three {
+  padding-left: 75px;
+  padding-right: 150px;
+  height: 700px;
+}
+
+.three > div {
+  font-size: 20px;
+  padding-left: 80px;
+  padding-bottom: 60px;
+}
+
+.read {
+  background-color: aquamarine;
+  width: 150px;
+  height: 50px;
+  border: none;
+}
+
+.four {
+  height: 700px;
+}
+
+#gallery {
+  max-width: 600px;
+  margin: 20px auto;
+}
+
+img {
+  width: 100%;
+  height: auto;
+  display: none;
+}
+
+/* footer */
+
+footer {
+  background-color: rgb(249, 185, 140);
+  /* text-align: center; */
+}
+
+footer > div {
+  color: #1e1e1e;
+  display: grid;
+  align-items: center;
+  grid-template-columns: auto auto auto auto;
+  text-align: center;
+}
+
+footer > div > div {
+  height: 150px;
+  color: #1e1e1e;
+  padding: 20px;
+}
+
+.bold {
+  font-weight: bold;
+  color: #1e1e1e;
+}
+
+footer > div {
+  text-align: left;
+}
+
+.email {
+  margin-top: 50px;
+  border: none;
+  border-radius: 30px;
+  height: 35px;
+  background-color: #fff;
+  color: #1e1e1e;
+  opacity: 50%;
+}
+
+.submit {
+  background-color: #1e1e1e;
+  color: #fff;
+  border-radius: 20px;
+}
+
+.last {
+  width: 1107px;
+  text-align: center;
+  font-weight: bold;
+  color: #1e1e1e;
+}

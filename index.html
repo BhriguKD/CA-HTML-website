@@ -1,0 +1,146 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Document</title>
+    <link rel="stylesheet" href="style.css" />
+  </head>
+  <body>
+    <nav>
+      <div class="nav-menu">
+        <div class="menu-left"><a href="#">Paw Prints</a></div>
+        <div class="menu-right">
+          <a class="home" href="#one">Home</a>
+          <a class="services" href="#two">Services</a>
+          <a class="about" href="#">About Us</a>
+          <a class="faq" href="#">FAQ</a>
+          <a class="book-now" href="/form.html">Book Now</a>
+        </div>
+      </div>
+    </nav>
+    <main>
+      <div id="one" class="landing-page">
+        <div class="title">Your Purr-fectly <br />Simple Pet Haven</div>
+        <div class="img01"></div>
+        <div class="img02"></div>
+        <div class="arrow"></div>
+        <div><button class="button">Book Now</button></div>
+        <div class="img05"></div>
+      </div>
+      <div class="section one">
+        <div>Need a place to leave your pet while you’re away ?</div>
+        <div>Want the best for your pet ?</div>
+        <div>Quality grooming for your pet ?</div>
+        <div>Think no more ...</div>
+      </div>
+      <div id="two" class="section two">
+        <h1>Our Services</h1>
+        <div class="container">
+          <div id="a1" class="srv01">
+            <div class="s01">01</div>
+            <div class="s1">Pet Sitting</div>
+          </div>
+          <div id="a2" class="srv02">
+            <div class="s02">02</div>
+            <div class="s2">Dog Walking</div>
+          </div>
+          <div id="a3" class="srv03">
+            <div class="s03">03</div>
+            <div class="s3">Grooming</div>
+          </div>
+          <div id="a4" class="srv04">
+            <div class="s04">04</div>
+            <div class="s4">Veterinary</div>
+          </div>
+        </div>
+      </div>
+      <div class="section three">
+        <h1>Learn about your pet</h1>
+        <div>
+          1. Dogs Have Unique Nose Prints <br />
+          Just like human fingerprints, each dog's nose print is unique. The
+          patterns of ridges and creases are specific ...
+        </div>
+        <div><button class="read">Read More</button></div>
+        <div>
+          2. Cats Use Purring for Self-Healing <br />Cats purr not only when
+          they are content but also when they are injured or in pain. The
+          vibrations ...
+        </div>
+        <div><button class="read">Read More</button></div>
+      </div>
+      <div class="section four">
+        <div id="gallery">
+          <img
+            src="/images02/pexels-goochie-poochie-grooming-3299905 (1).jpg"
+            alt="Image 1"
+          />
+          <img src="/images02/pexels-pixabay-160846.jpg" alt="Image 2" />
+          <img
+            src="/images02/pexels-simona-kidrič-2607544 (1).jpg"
+            alt="Image 3"
+          />
+          <!-- Add more images as needed -->
+        </div>
+      </div>
+    </main>
+    <footer>
+      <div class="footer-columns">
+        <div class="bold">Paw Prints</div>
+        <div>
+          <span class="bold">Services</span>
+          <div>
+            <br />
+            Pet Sitting <br />
+            Dog Walking <br />
+            Grooming <br />
+            Veterinary
+          </div>
+        </div>
+        <div>
+          <span class="bold">FAQ</span>
+          <div>
+            <br /><span class="bold">Company</span>
+            <div><br />Terms and Conditions <br />Privacy Policy</div>
+          </div>
+        </div>
+        <div>
+          <span class="bold">Get In Touch</span>
+          <br />
+          <input class="email" type="email" placeholder="    Enter email" />
+          <input class="submit" type="submit" value="Subscribe" />
+        </div>
+      </div>
+      <hr />
+      <div>
+        <p class="last">@2023 Glossy, All rights reserved.</p>
+      </div>
+    </footer>
+    <script>
+      document.addEventListener("DOMContentLoaded", function () {
+        var gallery = document.getElementById("gallery");
+        var images = gallery.getElementsByTagName("img");
+        var currentImageIndex = 0;
+
+        // Show the first image
+        images[currentImageIndex].style.display = "block";
+
+        // Function to change the image every second
+        function changeImage() {
+          // Hide the current image
+          images[currentImageIndex].style.display = "none";
+
+          // Move to the next image or loop back to the first one
+          currentImageIndex = (currentImageIndex + 1) % images.length;
+
+          // Show the next image
+          images[currentImageIndex].style.display = "block";
+        }
+
+        // Set an interval to call the changeImage function every second
+        setInterval(changeImage, 1000);
+      });
+    </script>
+  </body>
+</html>

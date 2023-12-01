@@ -1,0 +1,54 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Auto-changing Gallery</title>
+    <style>
+      #gallery {
+        max-width: 600px;
+        margin: 20px auto;
+      }
+
+      img {
+        width: 100%;
+        height: auto;
+        display: none;
+      }
+    </style>
+  </head>
+  <body>
+    <div id="gallery">
+      <img src="image1.jpg" alt="Image 1" />
+      <img src="image2.jpg" alt="Image 2" />
+      <img src="image3.jpg" alt="Image 3" />
+      <!-- Add more images as needed -->
+    </div>
+
+    <script>
+      document.addEventListener("DOMContentLoaded", function () {
+        var gallery = document.getElementById("gallery");
+        var images = gallery.getElementsByTagName("img");
+        var currentImageIndex = 0;
+
+        // Show the first image
+        images[currentImageIndex].style.display = "block";
+
+        // Function to change the image every second
+        function changeImage() {
+          // Hide the current image
+          images[currentImageIndex].style.display = "none";
+
+          // Move to the next image or loop back to the first one
+          currentImageIndex = (currentImageIndex + 1) % images.length;
+
+          // Show the next image
+          images[currentImageIndex].style.display = "block";
+        }
+
+        // Set an interval to call the changeImage function every second
+        setInterval(changeImage, 1000);
+      });
+    </script>
+  </body>
+</html>
